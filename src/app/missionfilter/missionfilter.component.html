@@ -1,0 +1,11 @@
+<div class="filter-container">
+  <mat-selection-list [multiple]="false" (selectionChange)="onFilterChange($event)">
+    <h3 class="filter-heading">MISSION LAUNCH YEAR</h3>
+
+    <div class="filter-year" *ngFor="let year of availableYears">
+      <mat-list-option [value]="year" style="color: black;">
+        {{ year }}
+      </mat-list-option>
+    </div>
+  </mat-selection-list>
+</div>

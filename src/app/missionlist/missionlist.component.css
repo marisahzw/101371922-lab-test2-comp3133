@@ -1,0 +1,56 @@
+.mission-container {
+    display: flex;
+}
+.filter-container {
+    width: 100px;
+    margin-right: 1rem;
+}
+
+
+.mission-name{
+    margin-left: 10px;
+    font-size: 30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.mission-year{
+    margin-left: 10px;
+    font-weight: 700;
+}
+.mission-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.mission-info{
+    margin: 30px;
+}
+
+
+
+
+.mission-image{
+    margin: 10px;
+}
+.missions {
+    width: 100vh;
+    margin: 5px;
+}
+.mission-card {
+    cursor: pointer;
+    margin: 10px;
+    background-color: rgb(203, 242, 243);
+    width: 120vh;
+    height: 60vh;
+    border-radius: 15px 10px;
+    
+}
+.mission-card:hover {
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.mission-details{
+    margin-left: 10px;
+    font-weight: 400;
+}

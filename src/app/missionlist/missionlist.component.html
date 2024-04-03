@@ -1,0 +1,27 @@
+<div class="mission-container">
+    <app-missionfilter (filter)="onFilter($event)"></app-missionfilter>
+    <div class="missions">
+        <div class="mission-info">
+            <div class="mission-card" *ngFor="let mission of missions" (click)="onMissionSelect(mission)" class="mission-card">
+                <div class="mission-header">
+                    <div class="mission-name">{{ mission.mission_name }}</div>
+
+                    <div class="mission-image">
+                        <img [src]="mission.links?.mission_patch_small" alt="{{ mission.mission_name }} mission patch" style="height: 80px;width: 80px;">
+                    </div>
+                    
+                </div>
+                <div class="mission-year">
+                    <b style="color: rgb(16, 16, 16);">{{ mission.launch_year }}</b>
+
+                </div>
+               
+            <div class="mission-details">
+                <p>{{ mission.details }}</p>
+            </div>
+        </div>
+
+        </div>
+       
+    </div>
+</div>
